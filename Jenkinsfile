@@ -4,7 +4,7 @@ pipeline {
     stages {
           stage('Checkout') {
             steps {
-                git credentialsId: 'Github-token', url: 'https://github.com/caaeesar/SUContent-SEDO-Regular-Exam-2024-10-2'
+                git credentialsId: 'GitHub-token', url: 'https://github.com/caaeesar/SUContent-SEDO-Regular-Exam-2024-10-2'
             }
         }     
         stage('Restore dependencies') {
