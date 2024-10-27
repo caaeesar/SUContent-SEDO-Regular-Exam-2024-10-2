@@ -6,6 +6,7 @@ pipeline {
             steps {
                 git credentialsId: 'Github-token', url: 'https://github.com/caaeesar/SUContent-SEDO-Regular-Exam-2024-10-2'
             }
+         }
         stage('Restore dependencies') {
             steps {
                 sh 'dotnet restore'
